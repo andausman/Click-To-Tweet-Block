@@ -1,0 +1,49 @@
+<blockquote style=" background-color:161b3a !important;">
+    I Love You, that is all I know.
+    You are a part of me I don't want to ever let go.
+    But, if this is what you want. I understand.
+    He said.
+</blockquote>
+       
+
+<script>
+            const quotes = [...document.querySelectorAll('blockquote')];
+        if (quotes.length) {
+            quotes.map(quote => {
+                const content = quote.innerHTML;
+                quote.innerHTML = content + ` <a class="tweet-button" href="https://twitter.com/share/?url=${window.location.href}&text=${encodeURI(content)}&via=bendadadotcom"><i class="fa fa-twitter"></i> Tweet This</a>`;
+            });
+        }
+            </script>
+            <style>
+            .tweet-button {
+                float: right;
+                padding: 5px 20px;
+                color: white !important;
+                background-color: #1d9bf0;
+                border-radius: 5px;
+                font: 'Helvetica Neue';
+                text-decoration: none !important;
+            }
+                /* Style all font awesome icons */
+.fa {
+  padding: 5px;
+  font-size: 5px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+/* Twitter */
+.fa-twitter {
+  background: #1d9bf0;
+  color: white;
+}
+        </style>
+        
+      <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
